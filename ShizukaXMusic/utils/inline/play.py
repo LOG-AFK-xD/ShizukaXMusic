@@ -76,14 +76,14 @@ def telegram_markup_timer(_, chat_id, played, dur):
                 text=_["PL_B_2"],
                 callback_data=f"add_playlist {videoid}",
             ),
-            InlineKeyboardButton(text="🌹 sᴏᴜʀᴄᴇ 🌹", url=f"https://github.com/its-star-boi/ShizukaXMusic"),
+            InlineKeyboardButton(text="Youtube 🫂", url=f"https://youtube.com/@Harsh-shukla-xD"),
         ],
         [
             InlineKeyboardButton(
                 text=_["PL_B_3"],
                 callback_data=f"PanelMarkup None|{chat_id}",
             ),
-            InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ 💌", url=f"{SUPPORT_GROUP}"),
+            InlineKeyboardButton(text="Support 🎥", url=f"{SUPPORT_GROUP}"),
         ],
     ]
     return buttons
@@ -99,14 +99,14 @@ def stream_markup(_, videoid, chat_id):
                 text=_["PL_B_2"],
                 callback_data=f"add_playlist {videoid}",
             ),
-            InlineKeyboardButton(text="🌹 sᴏᴜʀᴄᴇ 🌹", url=f"https://github.com/its-star-boi/ShizukaXMusic"),
+            InlineKeyboardButton(text="Youtube 🫂", url=f"https://youtube.com/@Harsh-shukla-xD"),
         ],
         [
             InlineKeyboardButton(
                 text=_["PL_B_3"],
                 callback_data=f"PanelMarkup None|{chat_id}",
             ),
-            InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ 💌", url=f"{SUPPORT_GROUP}"),
+            InlineKeyboardButton(text="Support 📨", url=f"{SUPPORT_GROUP}"),
         ],
     ]
     return buttons
