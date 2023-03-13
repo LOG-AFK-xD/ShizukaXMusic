@@ -38,9 +38,8 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
             InlineKeyboardButton(text="▢", callback_data=f"ADMIN Stop|{chat_id}"),
         ],
         [
-            InlineKeyboardButton(
-                text=_["Updates"],
-                url=f"{SUPPORT_CHANNEL}",
+            text=_["PL_B_3"],
+                callback_data=f"PanelMarkup {videoid}|{chat_id}",
             ),
             InlineKeyboardButton(
                 text=_["S_B_3"],
