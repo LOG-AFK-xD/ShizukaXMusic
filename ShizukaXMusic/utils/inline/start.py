@@ -19,7 +19,7 @@ def start_pannel(_):
                 text=_["S_B_1"],
                 url=f"https://t.me/{app.username}?start=help",
             ),
-            InlineKeyboardButton(text=_["S_B_2"], callback_data="settings_helper"),
+            InlineKeyboardButton(text=_["S_B_2"], callback_data="help_back"),
         ],
      ]
     return buttons
