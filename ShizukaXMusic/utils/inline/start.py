@@ -12,7 +12,7 @@ from typing import Union
 from pyrogram.types import InlineKeyboardButton
 
 from config import GITHUB_REPO, SUPPORT_CHANNEL, SUPPORT_GROUP
-from ShizukaXmusic import app
+from ShizukaXMusic import app
 
 
 def start_pannel(_):
