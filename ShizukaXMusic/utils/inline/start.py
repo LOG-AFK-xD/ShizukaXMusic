@@ -12,8 +12,7 @@ def start_pannel(_):
             InlineKeyboardButton(
                 text="Help",
                 callback_data="help_back",
-            ),
-            InlineKeyboardButton(text="Help", callback_data="settings_helper"),
+           )
         ],
     ]
     return buttons
