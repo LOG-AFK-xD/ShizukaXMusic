@@ -10,17 +10,17 @@ def start_pannel(_):
     buttons = [
         [
             InlineKeyboardButton(
-                text="ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ",
+                text="Add Me Your Group",
                 url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
             )
         ],
         [
             InlineKeyboardButton(
-                text="ʜᴇʟᴩ",
+                text="Help",
                 callback_data="settings_back_helper",
             ),
             InlineKeyboardButton(
-                text="sᴇᴛᴛɪɴɢs", callback_data="settings_helper"
+                text="Settings", callback_data="settings_helper"
             ),
         ],
      ]
@@ -31,27 +31,27 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
     buttons = [
         [
             InlineKeyboardButton(
-                text="ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ",
+                text="Add Me Your Group",
                 url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
             )
         ],
         [
             InlineKeyboardButton(
-                text="ʜᴇʟᴩ", callback_data="settings_back_helper"
+                text="Help", callback_data="settings_back_helper"
             )
         ],
         [
             InlineKeyboardButton(
-                text="❣ sᴜᴩᴩᴏʀᴛ ❣", url=f"{SUPPORT_GROUP}"
+                text="Group", url=f"{SUPPORT_GROUP}"
             ),
             InlineKeyboardButton(
-                text="🥀 ᴍᴀɪɴᴛᴀɪɴᴇʀ 🥀", user_id=OWNER
+                text="Creator", user_id=OWNER
             )
         ],
         [
             InlineKeyboardButton(
-                text="ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ",
-                url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
+                text="Language",
+                callback_data="LG",
             )
         ],
      ]
