@@ -11,7 +11,8 @@ def start_pannel(_):
         [
             InlineKeyboardButton(text=_["ST_B_6"], callback_data="LG",
             ),
-            text=_["S_B_5"],
+            InlineKeyboardButton(
+                text=_["S_B_5"],
                 url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
         ],
     ]
