@@ -11,7 +11,7 @@ def start_pannel(_):
         [
             InlineKeyboardButton(
                 text="Help",
-                callback_data="help_back",
+                callback_data=f"help_back",
            )
         ],
     ]
@@ -28,7 +28,7 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
         ],
         [
             InlineKeyboardButton(
-                text="Help", callback_data="settings_back_helper"
+                text="Help", callback_data="help_back"
             )
         ],
         [
