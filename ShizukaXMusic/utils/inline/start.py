@@ -6,29 +6,11 @@ from config import GITHUB_REPO, SUPPORT_CHANNEL, SUPPORT_GROUP
 from ShizukaXMusic import app
 
 
-def start_pannel(_):
-    buttons = [
-        [
-            InlineKeyboardButton(
-                text="Help",
-                callback_data=f"help_back",
-           )
-        ],
-    ]
-    return buttons
-
-
 def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
     buttons = [
-        [
+        [            
             InlineKeyboardButton(
-                text="Add Me Your Group",
-                url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
-            )
-        ],
-        [
-            InlineKeyboardButton(
-                text="Help", callback_data="help_back"
+                text="Help", callback_data="settings_back_helper"
             )
         ],
         [
