@@ -10,17 +10,12 @@ def start_pannel(_):
     buttons = [
         [
             InlineKeyboardButton(
-                text="Add Me Your Group",
-                url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
-            )
-        ],
-        [
-            InlineKeyboardButton(
                 text=_["S_B_1"],
-                InlineKeyboardButton(text=_["S_B_2"], callback_data="help_back",
-            )
+                url=f"https://t.me/{app.username}?start=help",
+            ),
+            InlineKeyboardButton(text=_["S_B_2"], callback_data="settings_helper"),
         ],
-     ]
+    ]
     return buttons
 
 
