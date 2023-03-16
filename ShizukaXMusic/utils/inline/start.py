@@ -18,7 +18,7 @@ def start_pannel(_):
             InlineKeyboardButton(
                 text=_["S_B_1"],
                 InlineKeyboardButton(text=_["S_B_2"], callback_data="help_back",
-            ),
+            )
         ],
      ]
     return buttons
