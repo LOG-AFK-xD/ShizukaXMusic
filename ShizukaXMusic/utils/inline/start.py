@@ -19,14 +19,14 @@ def start_pannel(_):
     if SUPPORT_CHANNEL and SUPPORT_GROUP:
         buttons.append(
             [
-                InlineKeyboardButton(text=_["S_B_2"], callback_data="settings_helper"),
+                InlineKeyboardButton(text=_["S_B_2"], callback_data="help"),
                 InlineKeyboardButton(text=_["S_B_3"], url=f"{SUPPORT_GROUP}"),
             ]
         )
     else:
         if SUPPORT_CHANNEL:
             buttons.append(
-                [InlineKeyboardButton(text=_["S_B_2"], callback_data="settings_helper")]
+                [InlineKeyboardButton(text=_["S_B_2"], callback_data="help")]
             )
         if SUPPORT_GROUP:
             buttons.append(
@@ -49,7 +49,7 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
     else:
         if SUPPORT_CHANNEL:
             buttons.append(
-                [InlineKeyboardButton(text=_["S_B_2"], callback_data="settings_helper")]
+                [InlineKeyboardButton(text=_["S_B_2"], callback_data="help")]
             )
         if SUPPORT_GROUP:
             buttons.append(
